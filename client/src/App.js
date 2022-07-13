@@ -3,7 +3,7 @@ import {useState} from "react"
 //Components
 import Searched from "./components/Searched.js"
 import Home from "./components/Home.js";
-import CodeOrDie from "./components/CodeOrDie"
+import CodeOrDie from "./components/code-or-die/CodeOrDie"
 
 function App() {
   const [search, setSearch] = useState("");
