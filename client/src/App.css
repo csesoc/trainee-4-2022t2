@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Code or Die Things! */
+
+@font-face {
+  font-family: kranky;
+  src: url(https://www.1001fonts.com/kranky-font.html);
+} 
+
+.Header-cd {
+  font-family: kranky;
+}
+
+.Header-cd h1 {
+  color: purple;
+}
