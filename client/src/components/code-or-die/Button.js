@@ -1,4 +1,4 @@
-// SKye
+// Skye
 import React from 'react'
 
 const Button = () => {
