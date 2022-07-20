@@ -1,6 +1,6 @@
 /*This is the stylesheet for the 'Searched' component, which includes the SearchBar and SearchRes components*/
 
-body{
+.Searched body{
   width: 100%;
   height: 100%;
 }

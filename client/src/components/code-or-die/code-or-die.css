@@ -1,0 +1,9 @@
+/*  classnames end with cd to mark as code or die*/
+
+.formCD{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(236, 213, 234);
+    background-size: cover;
+    
+}
