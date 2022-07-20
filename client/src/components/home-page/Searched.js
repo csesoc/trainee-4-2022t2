@@ -1,19 +1,20 @@
 import SearchBar from "./SearchBar"
 import SearchRes from "./SearchRes"
-import logo from "../assets/noBGlogo.png"
-import "../searched.css"
+import logo from "../../assets/noBGlogo.png"
+import "./searched.css"
 
+// This is the page with all the search results
 function Searched ({search, setSearch}) {
     const searchResults = [
-        <SearchRes key="1" name="Code or die" link="/codeOrDie" description="TBA"/>
+        <SearchRes key="1" name="Code or die" link="/code-or-die" description="TBA"/>
 
     ];
 
-    /*Uncompleted function for ordering search results */
+    /*Incomplete function for ordering search results */
     function orderRes (array, search) {
         return array;
     }
-    console.log(search);
+    
     return(
         <div className="search-page">
             <header>

@@ -1,6 +1,6 @@
 import SearchBar from "./SearchBar.js";
-import logo from "../assets/noBGlogo.png"
-import '../index.css'
+import logo from "../../assets/noBGlogo.png"
+import './home.css'
 import {useEffect} from 'react'
 
 function Home({setSearch, search}) {

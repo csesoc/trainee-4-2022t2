@@ -1,7 +1,5 @@
 // Skye
 
-import React from 'react'
-
 const Header = () => {
   // make it so that if text in header is clicked, it takes back to home form page.
 
