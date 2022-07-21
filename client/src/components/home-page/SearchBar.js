@@ -1,6 +1,5 @@
-import searchIcon from "../assets/noBGglass.png"
+import searchIcon from "../../assets/noBGglass.png"
 import {useNavigate} from 'react-router-dom'
-import {useState} from 'react'
 
 const SearchBar = ({setSearch, search}) => {
     const navigate = useNavigate();

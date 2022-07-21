@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {useState} from "react"
 //Components
-import Searched from "./components/Searched.js"
-import Home from "./components/Home.js";
-import CodeOrDie from "./components/code-or-die/CodeOrDie"
+import Searched from "./components/home-page/Searched.js"
+import Home from "./components/home-page/Home.js";
+import CodeOrDie from "./components/code-or-die/code-or-die.js"
 
 function App() {
   const [search, setSearch] = useState("");
@@ -15,7 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/search" element={<Searched search={search} setSearch = {setSearch}/>} />
-        <Route path="/codeOrDie" element={<CodeOrDie />} />
+        <Route path="/code-or-die/*" element={<CodeOrDie />} />
         <Route path="/" element={<Home setSearch={setSearch} search={search}/>} />
         
       </Routes>

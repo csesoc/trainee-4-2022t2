@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom"
 
+// This component is for each search result- as in the apps that we add
 const SearchRes = ({name, description, link}) => {
     return (
       <div className="SearchRes">
