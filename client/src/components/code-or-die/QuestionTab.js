@@ -5,19 +5,39 @@ import Button from "./Button"
 import Header from "./Header"
 import Menu from "./Menu"
 
-const QuestionTab = ({examples, assumptions, tabContent, stop, run, pause, currTime, changeTime}) => {
-    /*tabContent will either be a paragraph element with the given text or a CodeBox element*/
-    
+// A question tab is either the 'code', 'examples', or 'assumptions and constraints' tab where you actually do the coding
+const QuestionTab = ({content, time, setTime, running, setRunning}) => {
+    /*the content variable will either be a paragraph element with the given text or a CodeBox element*/  
+
+    function pause (sign, running, setRunning) {
+      setRunning(!running);
+      if (running){
+        sign = "Pause";
+      }
+      else if (!running){
+        sign = "Unpause";
+      }
+      return;
+    }
+  
+    function stop () {
+      return;
+    }
+  
+    function run () {
+      return;
+    }
+
     return (
-    <div>
+    <div className="questionTabCD">
         <Header />
-        <Menu examples={examples} assumptions={assumptions} stop={stop} run={run} pause={pause}/>
-        <Button purpose={stop} sign="Stop"/>
+        <Menu />
+        <Button purpose={stop} sign='Stop'/>
         <Question />
-        {tabContent} 
-        <Button purpose={run} sign="Run"/>
-        <Button purpose={pause} sign="Pause" currTime={currTime} changeTime={changeTime}/>
-        <TimeElapsed currTime={currTime} changeTime={changeTime}/>
+        <div>{content}</div>
+        <Button purpose={run} sign='Run'/>
+        <Button purpose={pause} sign='Pause' time={time} setTime={setTime} setRunning ={setRunning}/>
+        <TimeElapsed time={time} setTime={setTime} running={running}/>
     </div>
   )
 }

@@ -1,33 +1,38 @@
 // Marian
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-const TimeElapsed = ({time, setTime}) => {
- 
-  setTime(time + new Date().getTime());
+const TimeElapsed = ({time, setTime, running}) => {
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
-  useEffect((setTime) => {
-    const interval = setInterval(() => {
-      setTime(time + new Date().getTime());
-    }, 1000)
+  //update the time every second
+  useEffect(() => {
+    let interval;
+    if (running) {
+      interval = setInterval(() => {
+        setTime(time + 1);
+      }, 1000);
+    } else if (!running) {
+      clearInterval(interval);
+    }
+
+     // calculate time in hours, minutes, and seconds
+    setHours(Math.floor((time/ 3600) % (60 * 60 * 60)));
+    setMinutes(Math.floor((time / 60) % 60));
+    setSeconds(Math.floor(time % 60));
 
     return () => clearInterval(interval);
-  }, [time]);
+  });
 
-  return getReturnValues(time);
-};
-
-const getReturnValues = (counter) => {
-  // calculate time
-  const hours = Math.floor(
-    (counter % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((counter % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((counter % (1000 * 60)) / 1000);
-
+ 
   return (
     <div className="timerCD">
-        <p> {hours} : {minutes} : {seconds} </p>
+        <p> {hours > 9 ? hours : '0' + hours} : {minutes > 9 ? minutes : '0' + minutes} : {seconds > 9 ? seconds : '0' + seconds} </p>
     </div>
   )
+  
 };
+
 
 export default TimeElapsed

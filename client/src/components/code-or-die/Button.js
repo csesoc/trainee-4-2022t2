@@ -1,9 +1,12 @@
 // Skye
 import React from 'react'
 
-const Button = () => {
+const Button = ({purpose, sign, time, setTime }) => {
+
   return (
-    <div>Button</div>
+    <div className='buttonCD'>
+      <button onClick={() => purpose} >{sign}</button>
+    </div>
   )
 }
 
