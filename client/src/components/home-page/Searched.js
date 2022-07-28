@@ -6,7 +6,8 @@ import "./searched.css"
 // This is the page with all the search results
 function Searched ({search, setSearch}) {
     const searchResults = [
-        <SearchRes key="1" name="Code or die" link="/code-or-die" description="TBA"/>
+        <SearchRes key="1" name="Code or die" link="/code-or-die" 
+        description="having twoubwe m-meeting those assignment deadwines (o_O)? n-nowt abwe tuwu get ovew the ovewwhewming p-pwessuwes of faiwuwe awnd the numbness o-of success (o_O)? code ow die tuwns youw p-pwocwastination intwo a-action b-by giving u-uwu onwy two o-options: code *:･ﾟ✧*:･ﾟ✧  ow die〜☆ "/>
 
     ];
 

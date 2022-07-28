@@ -80,20 +80,25 @@
   left: 15%;
 }
 
-.results a{
+.search-page .results a{
   text-decoration: none;
   color:rgba(133, 66, 210, 0.913)
 }
 
-.results a:hover{
+.search-page .results a:hover{
   text-decoration: underline;
 }
 
-.results h2{
+.search-page .results h2{
   font-size:xx-large;
 }
 
-.results p{
+.search-page .results p{
   font-size: large;
+}
+
+.search-page .SearchRes p{
+  width: 45%;
+  opacity: 0.9;
 }
 
