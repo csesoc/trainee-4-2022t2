@@ -97,8 +97,37 @@
   font-size: large;
 }
 
+.search-page .resultInfo {
+  width: 50%;
+}
 .search-page .SearchRes p{
-  width: 45%;
   opacity: 0.9;
+}
+
+.search-page .SearchRes{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.search-page .searchRes .resultSound{
+  height: 10%;
+  width: 10%;
+}
+
+.search-page .SearchRes button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background-color: white;
+
+}
+
+.search-page .SearchRes button img {
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
 }
 

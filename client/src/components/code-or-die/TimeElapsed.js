@@ -23,12 +23,13 @@ const TimeElapsed = ({time, setTime, running}) => {
     setSeconds(Math.floor(time % 60));
 
     return () => clearInterval(interval);
-  });
+  }, [running, setTime, time]);
 
  
   return (
     <div className="timerCD">
-        <p> {hours > 9 ? hours : '0' + hours} : {minutes > 9 ? minutes : '0' + minutes} : {seconds > 9 ? seconds : '0' + seconds} </p>
+        <p>Time elapsed: </p> 
+        <p>{hours > 9 ? hours : '0' + hours} : {minutes > 9 ? minutes : '0' + minutes} : {seconds > 9 ? seconds : '0' + seconds} </p>
     </div>
   )
   

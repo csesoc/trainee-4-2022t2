@@ -22,14 +22,17 @@ const CodeBox = ({timeTilDel, toDel}) => {
   
   return (
     <div className="codeBoxCD">
+      <p>Start Coding...</p>
+    
       <textarea value={code} 
-        //when code in the codeBox changes, then update the code variable to its new value and bring the doom counter back to 0 
-        onChange={(e) => {
-          setCode(e.target.value ? e.target.value : "");
-          setCounter(0);}
+      //when code in the codeBox changes, then update the code variable to its new value and bring the doom counter back to 0 
+      onChange={(e) => {
+        setCode(e.target.value ? e.target.value : "");
+        setCounter(0);}
       }
       
       ></textarea>
+      
     </div>
   )
 }

@@ -1,16 +1,11 @@
-body{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
+
 /*The header has the search bar and the logo, most of this css is to center everything*/
 /*I haven't actually centred this properly vertically!!*/
-.Home header {
+.Home {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 60%);
-  
+  transform: translate(-50%, -50%);
 }
 
 .Home .SearchBar{
@@ -23,7 +18,7 @@ body{
 
 /*Align the logo and the searchbar 
 so that they're centred with each other*/
-.Home header .logo, .Home .SearchBar img{
+.Home .logo, .Home .SearchBar img{
   vertical-align: bottom;
 }
 

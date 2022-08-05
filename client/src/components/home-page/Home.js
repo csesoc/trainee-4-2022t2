@@ -11,14 +11,10 @@ function Home({setSearch, search}) {
   return (
     
     <div className="Home">
-
-        <header>
-        <img className="logo" src={logo} alt="app logo" />
-        
-        {/*Includes the search icon, the search bar, and the search button*/}
-        <SearchBar setSearch={setSearch} search={search}/>
-        
-        </header>     
+      <img className="logo" src={logo} alt="app logo" />
+      
+      {/*Includes the search icon, the search bar, and the search button*/}
+      <SearchBar setSearch={setSearch} search={search}/>
         
     </div>
     

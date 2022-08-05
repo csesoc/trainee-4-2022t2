@@ -2,7 +2,7 @@ import Form from "./Form"
 import QuestionTab from "./QuestionTab.js"
 import {useState} from "react"
 import {Route, Routes} from "react-router-dom"
-import './code-or-die.css'
+import './codeOrDie.css'
 import CodeBox from "./CodeBox"
 
 
@@ -18,12 +18,11 @@ const CodeOrDie = () => {
   // variables for the specific difficulty
   const [timeTilDel, setTimeTilDel] = useState(2);
   const [toDel, setToDel] = useState(3);
-
-
+  
   return (
     <Routes>
-      <Route path="examples" element={<QuestionTab content={examples} time={time} setTime={setTime} running={running} setRunning={setRunning}/>} />
-      <Route path="assumptions-and-constraints" element={<QuestionTab content={assumptions} time={time} setTime={setTime} running={running} setRunning={setRunning}/>} />
+      <Route path="examples" element={<QuestionTab content={<p>{examples}</p>} time={time} setTime={setTime} running={running} setRunning={setRunning}/>} />
+      <Route path="assumptions-and-constraints" element={<QuestionTab content={<p>{assumptions}</p>} time={time} setTime={setTime} running={running} setRunning={setRunning}/>} />
       <Route path="code" element={<QuestionTab content={<CodeBox timeTilDel={timeTilDel} toDel={toDel}/>} time={time} setTime={setTime} running={running} setRunning={setRunning}/>} />
       <Route path="" element={<Form />} />
     </Routes>
