@@ -7,6 +7,7 @@ import CodeOrDie from "./components/code-or-die/codeOrDie.js"
 
 function App() {
   const [search, setSearch] = useState("");
+  
   return (
     <Router>    
       {/*I left the nav and footer elements empty to remind us 

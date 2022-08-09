@@ -10,7 +10,7 @@ import { useEffect, useState } from "react"
 const QuestionTab = ({content, time, setTime, running, setRunning}) => {
     /*the content variable will either be a paragraph element with the given text or a CodeBox element*/  
 
-    // Marian- I haven't tested this 'pause' function
+    // From Marian- I haven't tested this 'pause' function
     function pause (sign, running, setRunning) {
       setRunning(!running);
       if (running){

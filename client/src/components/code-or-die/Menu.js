@@ -10,8 +10,6 @@ const Menu = () => {
     setToggleState(index);
   };
 
-  
-
   return (
     <div className="menuCD">
       <Link to="../examples"

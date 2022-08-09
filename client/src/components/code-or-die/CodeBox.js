@@ -2,8 +2,7 @@
 import {useState, useEffect} from "react"
 
 //timeTilDel and toDel are adjustable according to difficulty 
-const CodeBox = ({timeTilDel, toDel}) => {
-  const [code, setCode] = useState("code");
+const CodeBox = ({timeTilDel, toDel, code, setCode}) => {
   const [counter, setCounter] = useState(0);
   
   useEffect(() => {

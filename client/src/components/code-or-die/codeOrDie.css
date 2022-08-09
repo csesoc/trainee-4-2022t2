@@ -16,6 +16,8 @@ body > #root{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /*SKYEEEE here is where you can put the font style here under the font-family element*/
 }
 
@@ -111,7 +113,7 @@ which includes the menu and the stop button*/
     border-style: solid;
     border-color: var(--darkBgCol);
     border-radius: 15%;
-    width: 30%;
+    width: 25%;
     flex-grow: unset;
     display: flex;
     justify-content: space-between;

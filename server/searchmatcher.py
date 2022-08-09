@@ -1,4 +1,4 @@
-input = "Cade or die"
+input = "Code or die"
 sites = {
     "code or die": 0,
     "site filler": 0
