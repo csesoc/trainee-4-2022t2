@@ -8,6 +8,6 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
-@app.get("/getQuestion")
-async def root():
-    return get_question()
+@app.get("/code/questions")
+async def fetch_questions(difficulty: str):
+    return get_question(difficulty)
